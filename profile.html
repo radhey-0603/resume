@@ -5,63 +5,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>My Profile</h1>
-  </header>
-  
-  <section class="profile">
-    <div class="profile-picture">
-      <img src="profile-picture.jpg" alt="Profile Picture">
-    </div>
-    <div class="profile-info">
-      <h2>Your Name</h2>
-      <p>Job Title</p>
-      <p>Location</p>
-      <p>Email: your-email@example.com</p>
-      <p>Phone: 123-456-7890</p>
-    </div>
-  </section>
-<section class="bio">
-  <h2>About Me</h2>
-  <p>
-    <div class="container">
-  <p class="typed">This is a paragraph of typed text.</p>
-</div>.
-  </p>
-</section>
+  <div class="container">
+    <h1>Welcome to My Profile</h1>
+    <p class="typed">I am a passionate web developer with a love for coding.</p>
+  </div>
 
-
-  <section class="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <h3>Company Name</h3>
-        <p>Job Title</p>
-        <p>Date Range</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla ligula nec turpis dictum.</p>
-      </li>
-      <li>
-        <h3>Company Name</h3>
-        <p>Job Title</p>
-        <p>Date Range</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fringilla ligula nec turpis dictum.</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="education">
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <h3>University Name</h3>
-        <p>Degree</p>
-        <p>Date Range</p>
-      </li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2023 Your Name</p>
-  </footer>
+  <script>
+    // Optional: Delay the start of typing animation for better visibility
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var typedText = document.querySelector('.typed');
+        typedText.classList.add('start-typing');
+      }, 1000); // Adjust the delay (in milliseconds) as needed
+    });
+  </script>
 </body>
 </html>
