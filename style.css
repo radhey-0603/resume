@@ -72,3 +72,20 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+@keyframes movingText {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.moving-words {
+  display: inline-block;
+  animation: movingText 8s infinite;
+}
